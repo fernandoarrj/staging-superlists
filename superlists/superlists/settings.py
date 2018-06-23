@@ -27,7 +27,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG 
 
-ALLOWED_HOSTS = ['167.99.228.81']
+ALLOWD_HOSTS = ["staging-superlists"]
 
 
 # Application definition
