@@ -4,12 +4,16 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import WebDriverException
 
+import time
+
 class LayoutAndStylingTest(FunctionalTest):
 
 	def test_layout_and_styling(self):
 		# Edith acessa a página inicial
 		self.browser.get(self.live_server_url)
 		self.browser.set_window_size(1024, 768)
+
+		time.sleep(1)
 
 		# Ela percebe que a caixa de entrada está elegantamente centralizada
 		inputbox = self.browser.find_element_by_id('id_new_item')
