@@ -12,7 +12,7 @@ MAX_WAIT = 10
 class FunctionalTest(StaticLiveServerTestCase):
 
 	def setUp(self):
-		self.binary = FirefoxBinary('/opt/firefox/firefox')
+		self.binary = FirefoxBinary('/usr/bin/firefox')
 		self.browser = webdriver.Firefox(firefox_binary=self.binary)
 		staging_server = os.environ.get('STAGING_SERVER')
 		if staging_server:

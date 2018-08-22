@@ -10,4 +10,4 @@ ExecStart=/home/eslpeth/miniconda3/envs/superlists/bin/gunicorn \
 	superlists.wsgi:application
 
 [Install]
-WantedBy=multi-user-target
+WantedBy=multi-user.target

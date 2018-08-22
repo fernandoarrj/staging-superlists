@@ -1,3 +1,5 @@
+import time
+
 from .base import FunctionalTest
 
 from selenium import webdriver
@@ -82,6 +84,7 @@ class ItemValidationTest(FunctionalTest):
 			self.get_error_element().is_displayed()
 		))
 
+		time.sleep(1)
 		# Ela começa a digitar na caixa de entrada para limpar o erro
 		self.get_item_input_box().send_keys('a')
 
